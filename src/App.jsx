@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Person } from './components/Person'
+import { People } from './components/People';
 
 function App() {
 
@@ -28,21 +28,12 @@ function App() {
   ]);
 
   return (
-    <div className='container d-flex'>
-      <div className='row'>
-        {persons.map( (person) => {
-          return (
-            <Person
-            key={person.id}
-            name={person.name}
-            img={person.img}
-            role={person.role}            
-            />
-          );
-        })}
-
-        
-
+    <div className='App'>
+      <div className='container'> 
+        <People 
+          persons={persons} 
+          setPersons={setPersons}
+        />
       </div>
     </div>
   )

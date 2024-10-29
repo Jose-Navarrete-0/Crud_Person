@@ -20,7 +20,6 @@ export const Person = ({ name, role, img}) => {
 }
 
 Person.propTypes = {
-  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   role: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired
